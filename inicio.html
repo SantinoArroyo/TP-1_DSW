@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arroyo-Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -14,9 +14,11 @@
 
 <body>
     <header>
-        <img src="../Imagenes/1719359115854.jpg" alt="Mi Foto">
+        <div class="perfil">
+            <img src="/Imagenes/1719359115854.jpg">
+        </div>
         <h1>Santino Arroyo</h1>
-        <h2>Desarrollador Web</h2>
+        <h2>Científico de Datos</h2>
     </header>
 
     <nav>
@@ -35,6 +37,28 @@
             recopilación y limpieza, hasta el desarrollo e implementación de modelos de Machine Learning.
         </p>
 
+        <div class="col text-center">
+            <label id="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
 
     </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+            function cambiaTema(ev){
+                if(ev.target.checked){
+                    document.documentElement.setAttribute('tema', 'light');
+                } else {
+                    document.documentElement.setAttribute('tema', 'dark');
+                }
+            }
+            colorSwitch.addEventListener('change', cambiaTema);
+    </script>
+
 </body>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroyo-Portfolio</title>
+    <link rel="stylesheet" href="../css/style_habilidades.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="perfil">
+            <img src="/Imagenes/1719359115854.jpg">
+        </div>
+        <div class="titulos">
+            <h1>Santino Arroyo</h1>
+            <h2>Ingeniero en sistemas - Desarrollador full-stack</h2>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li> <a href="../index.html">Inicio</a></li>
+            <li> <a href="habilidades.html">Habilidades</a></li>
+            <li> <a href="proyectos.html">Proyectos</a></li>
+            <li> <a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3>
+            Lenguajes
+        </h3>
+        <div class="contenedor-grid">
+            <h4> Frontend </h4>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Experiencia en librerías como:</li>
+                <ul>
+                    <li>React Js</li>
+                    <li>Angular</li>
+                    <li>jQuery</li>
+                    <li>Less</li>
+                </ul>
+            </ul>
+            <h4> Backend </h4>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+            <h4> Bases de Datos </h4>
+            <ul>
+                <li>SQL Server</li>
+                <li>Oracle</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+            </ul>
+            <h4> Servidores </h4>
+            <ul>
+                <li>Ngnix</li>
+            </ul>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="contenedor_switch">
+            <div class="col text-center">
+                <label id="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+
+        function cambiaTema(ev) {
+            if (ev.target.checked) {
+                document.documentElement.setAttribute('tema', 'light');
+            } else {
+                document.documentElement.setAttribute('tema', 'dark');
+            }
+        }
+        colorSwitch.addEventListener('change', cambiaTema);
+    </script>
+
+</body>

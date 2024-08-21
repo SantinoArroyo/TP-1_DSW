@@ -13,33 +13,47 @@
 </head>
 
 <body>
+
     <header>
         <div class="perfil">
             <img src="/Imagenes/1719359115854.jpg">
         </div>
         <div class="titulos">
             <h1>Santino Arroyo</h1>
-            <h2>Científico de Datos</h2>    
+            <h2>Ingeniero en sistemas - Desarrollador full-stack</h2>
         </div>
+
     </header>
 
     <nav>
         <ul>
             <li> <a href="index.html">Inicio</a></li>
-            <li> <a href="HTML/sobremi.html">Sobre Mí</a></li>
             <li> <a href="HTML/habilidades.html">Habilidades</a></li>
             <li> <a href="HTML/proyectos.html">Proyectos</a></li>
             <li> <a href="HTML/contacto.html">Contacto</a></li>
         </ul>
     </nav>
 
-    <main>
+    <aside>
+        <h3>
+            Educación
+        </h3>
         <p>
-            Soy un Científico de Datos con una sólida experiencia en el ciclo completo de vida de los datos, desde la
-            recopilación y limpieza, hasta el desarrollo e implementación de modelos de Machine Learning.
+            Ingeniería en Sistemas - UTN 2022-2027
         </p>
+    </aside>
 
+    <main>
+        <h3>
+            Sobre mí
+        </h3>
+        <p>
+            Desarrollador full-stack especializado en backend con 5 años de experiencia en el mercado laboral. Me
+            especializo en lenguajes como Python, SQL y Oracle y poseo conocimientos en el manejo de servicios como AWS.
+            Buen desarrollo de habilidades blandas y oratoria.
+        </p>
     </main>
+
 
     <footer>
         <div class="contenedor_switch">
@@ -48,20 +62,21 @@
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label>
-            </div>    
+            </div>
         </div>
     </footer>
 
     <script>
         const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
-            function cambiaTema(ev){
-                if(ev.target.checked){
-                    document.documentElement.setAttribute('tema', 'light');
-                } else {
-                    document.documentElement.setAttribute('tema', 'dark');
-                }
+
+        function cambiaTema(ev) {
+            if (ev.target.checked) {
+                document.documentElement.setAttribute('tema', 'light');
+            } else {
+                document.documentElement.setAttribute('tema', 'dark');
             }
-            colorSwitch.addEventListener('change', cambiaTema);
+        }
+        colorSwitch.addEventListener('change', cambiaTema);
     </script>
 
 </body>

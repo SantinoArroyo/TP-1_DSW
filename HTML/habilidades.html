@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="../css/style_habilidades.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -34,7 +34,10 @@
         </nav>
 
         <main>
-            <h3>Lenguajes</h3>
+            <div class="titulo">
+                <h3>Lenguajes</h3>
+            </div>
+
             <div class="contenedor-grid">
                 <div>
                     <h4>Frontend</h4>
@@ -47,7 +50,6 @@
                             <li>React Js</li>
                             <li>Angular</li>
                             <li>jQuery</li>
-                            <li>Less</li>
                         </ul>
                     </ul>
                 </div>
@@ -80,15 +82,9 @@
             <div class="footer-content">
                 <p>Santino Arroyo | +54 3576 448401</p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/santino-arroyo-628090239/" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30" height="30">
-                    </a>
-                    <a href="https://github.com/SantinoArroyo" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30" height="30">
-                    </a>
-                    <a href="mailto:josesantinoarroyo01@gmail.com">
-                        <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Google" width="30" height="30">
-                    </a>
+                    <a href="https://www.linkedin.com/in/santino-arroyo-628090239/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="https://github.com/SantinoArroyo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:josesantinoarroyo01@gmail.com"> <i class="fa-brands fa-google"></i></a>
                 </div>
             </div>
             <div class="contenedor_switch">
@@ -112,6 +108,18 @@
                 }
             }
             colorSwitch.addEventListener('change', cambiaTema);
+
+    
+        const navLinks = document.querySelectorAll("nav ul li a");
+        navLinks.forEach(link => {
+            link.addEventListener("mouseover", function() {
+                this.style.color = "var(--color-principal)";
+            });
+            link.addEventListener("mouseout", function() {
+                this.style.color = "#fff";
+            });
+        });
+
         </script>
 
     </body>

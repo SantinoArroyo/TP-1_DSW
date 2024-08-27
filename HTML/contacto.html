@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroyo-Portfolio</title>
+    <link rel="stylesheet" href="../css/style_contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+</head>
+
+<body>
+
+    <header>
+        <div class="perfil">
+            <img src="/Imagenes/1719359115854.jpg">
+        </div>
+        <div class="titulos">
+            <h1>Santino Arroyo</h1>
+            <h2>Ingeniero en sistemas - Desarrollador full-stack</h2>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li> <a href="../index.html">Inicio</a></li>
+            <li> <a href="habilidades.html">Habilidades</a></li>
+            <li> <a href="proyectos.html">Proyectos</a></li>
+            <li> <a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="contact-container">
+            <h4>Contacto</h4>
+            <form action="https://formspree.io/f/meojnkzk" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Santino Arroyo | +54 3576 448401</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/santino-arroyo-628090239/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="https://github.com/SantinoArroyo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:josesantinoarroyo01@gmail.com"> <i class="fa-brands fa-google"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor_switch">
+            <div class="col text-center">
+                <label id="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+
+        function cambiaTema(ev) {
+            if (ev.target.checked) {
+                document.documentElement.setAttribute('tema', 'light');
+            } else {
+                document.documentElement.setAttribute('tema', 'dark');
+            }
+        }
+        colorSwitch.addEventListener('change', cambiaTema);
+
+        // Animación de hover en los elementos del menú de navegación
+        const navLinks = document.querySelectorAll("nav ul li a");
+        navLinks.forEach(link => {
+            link.addEventListener("mouseover", function () {
+                this.style.color = "var(--color-principal)";
+            });
+            link.addEventListener("mouseout", function () {
+                this.style.color = "#fff";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

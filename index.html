@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
 </head>
 
 <body>
@@ -62,12 +61,27 @@
                             eficiente.</li>
                     </ul>
                 </div>
-
+                <div class="experiencia-item">
+                    <h4>Desarrollador Full Stack</h4>
+                    <p class="empresa">Arcor | 2022 - 2025</p>
+                    <ul>
+                        <li>Participé en el desarrollo del frontend de su última página web. </li>
+                        <li>Implementé nuevas funcionalidades en la plataforma de e-commerce de Arcor utilizando
+                            tecnologías como MySQL.</li>
+                        <li>Colaboré en la migración de la base de datos a un nuevo sistema, mejorando la eficiencia y
+                            la escalabilidad.</li>
+                    </ul>
+                </div>
             </section>
         </main>
         <aside>
-            <h3>Educación</h3>
-            <p>Ingeniería en Sistemas - UTN 2022-2027</p>
+            <div class="educacion">
+                <h3>Educación</h3>
+                <p>Ingeniería en Sistemas - UTN 2022-2027</p>
+            </div>
+            <div class="cv">
+                <a href="/Documentos/Cv_SantinoArroyo_1.pdf" download="Santino_Arroyo_CV.pdf"> <i class="fa-solid fa-download"></i> Descargar CV</a>
+            </div>
         </aside>
     </div>
 
@@ -75,17 +89,9 @@
         <div class="footer-content">
             <p>Santino Arroyo | +54 3576 448401</p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/santino-arroyo-628090239/" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30"
-                        height="30">
-                </a>
-                <a href="https://github.com/SantinoArroyo" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30" height="30">
-                </a>
-                <a href="mailto:josesantinoarroyo01@gmail.com">
-                    <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Google" width="30"
-                        height="30">
-                </a>
+                <a href="https://www.linkedin.com/in/santino-arroyo-628090239/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                <a href="https://github.com/SantinoArroyo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:josesantinoarroyo01@gmail.com"> <i class="fa-brands fa-google"></i></a>
             </div>
         </div>
         <div class="contenedor_switch">
@@ -109,6 +115,16 @@
             }
         }
         colorSwitch.addEventListener('change', cambiaTema);
+
+        const navLinks = document.querySelectorAll("nav ul li a");
+        navLinks.forEach(link => {
+            link.addEventListener("mouseover", function () {
+                this.style.color = "var(--color-principal)";
+            });
+            link.addEventListener("mouseout", function () {
+                this.style.color = "#fff";
+            });
+        });
     </script>
 
 </body>

@@ -20,6 +20,7 @@ body {
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
     margin: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -114,7 +115,6 @@ nav li:hover::after {
 }
 
 .contenedor-grid {
-    border: 3px solid #ccc;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -144,23 +144,23 @@ nav li:hover::after {
 }
 
 .contenedor-grid div:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 footer {
     background-color: var(--color-secundario);
     color: var(--color-fuente);
-    /* Aplica el color de la fuente basado en el tema */
     padding: 20px 0;
     text-align: center;
     border-top: 2px solid var(--color-primario);
 }
 
+
 .footer-content p {
     margin: 0;
     font-size: 16px;
     color: var(--color-fuente);
-    /* Aplica el color de la fuente basado en el tema */
 }
 
 .social-icons a{
@@ -168,7 +168,7 @@ footer {
     transition: filter 0.3s ease;
     font-size: 30px;
     color: var(--color-fuente);
-} 
+}
 
 .social-icons i{
     filter: invert(75%);

@@ -1,34 +1,43 @@
 :root {
+  --color-secundario: #333;
+  --color-acento: #2a7cc0;
   --color-fuente: #ffffff;
   --color-fondo: #000;
 }
 
 [tema="light"] {
-  --color-fuente: #000;
-  --color-fondo: #fff;
+  --color-fuente: #000000;
+  --color-fondo: #f4f4f4;
 }
 
 body {
   background-color: var(--color-fondo);
   color: var(--color-fuente);
-  font-family: "Open Sans";
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   display: flex;
-  padding: 10px;
+  padding: 20px;
   align-items: center;
+  background-color: var(--color-primario);
+  color: var(--color-fuente);
 }
 
 h3 {
-  font-size: 25px;
-  text-decoration: underline;
+  font-size: 28px;
+  align-items: center;
 }
 
 .perfil img {
-  max-width: 200px;
-  border-radius: 30%;
+  max-width: 150px;
+  border-radius: 50%;
   margin: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -54,19 +63,66 @@ nav a {
   text-decoration: none;
 }
 
-aside {
-  float: right;
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
   padding: 20px;
-  width: 200px;
 }
 
+.contenedor-grid h4 {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  color: var(--color-fuente);
+}
+
+.contenedor-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contenedor-grid div {
+  background-color: var(--color-secundario);
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--color-fuente);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contenedor-grid div:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background-color: var(--color-secundario);
+  color: var(--color-fuente);
+  padding: 20px 0;
+  text-align: center;
+  border-top: 2px solid var(--color-primario);
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--color-fuente);
+}
+
+.social-icons a img {
+  filter: invert(100%);
+  transition: filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+  filter: invert(75%);
+}
 
 .contenedor_switch {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 #switch {
   position: relative;
@@ -125,4 +181,20 @@ input:checked+.slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+.contenedor-secciones {
+  display: flex; /* Activa flexbox en el nuevo contenedor */
+}
+
+main {
+  width: 70%; /* Ajusta el ancho de "Sobre mí" */
+  padding: 20px; 
+}
+
+aside {
+  width: 40%; /* Ajusta el ancho de "Educación" */
+  padding: 30px;
+  text-align: right; 
 }

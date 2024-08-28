@@ -150,7 +150,6 @@ nav li:hover::after {
 footer {
     background-color: var(--color-secundario);
     color: var(--color-fuente);
-    /* Aplica el color de la fuente basado en el tema */
     padding: 20px 0;
     text-align: center;
     border-top: 2px solid var(--color-primario);
@@ -160,7 +159,6 @@ footer {
     margin: 0;
     font-size: 16px;
     color: var(--color-fuente);
-    /* Aplica el color de la fuente basado en el tema */
 }
 
 .social-icons a{

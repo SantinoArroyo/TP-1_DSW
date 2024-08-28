@@ -125,14 +125,14 @@ footer {
     color: var(--color-fuente);
 }
 
-.social-icons a{
+.social-icons a {
     filter: invert(100%);
     transition: filter 0.3s ease;
     font-size: 30px;
     color: var(--color-fuente);
 }
 
-.social-icons i{
+.social-icons i {
     filter: invert(75%);
 }
 

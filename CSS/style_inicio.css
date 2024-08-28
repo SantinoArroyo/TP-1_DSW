@@ -127,14 +127,14 @@ footer {
 }
 
 
-.social-icons a{
+.social-icons a {
   filter: invert(100%);
   transition: filter 0.3s ease;
   font-size: 30px;
   color: var(--color-fuente);
 }
 
-.social-icons i{
+.social-icons i {
   filter: invert(75%);
 }
 
@@ -221,7 +221,8 @@ aside {
 
 .sobre-mi,
 .educacion,
-.experiencia,.cv {
+.experiencia,
+.cv {
   border: 1px solid #ccc;
   background-color: var(--color-contenedor);
   padding: 10px;
@@ -236,7 +237,7 @@ aside {
 }
 
 .cv a i {
-  color: var(--color-fuente); 
+  color: var(--color-fuente);
 }
 
 .cv:hover {

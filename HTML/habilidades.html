@@ -1,127 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Arroyo-Portfolio</title>
-        <link rel="stylesheet" href="../css/style_habilidades.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroyo-Portfolio</title>
+    <link rel="stylesheet" href="../css/style_habilidades.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
 
-        <header>
-            <div class="perfil">
-                <img src="/Imagenes/1719359115854.jpg">
-            </div>
-            <div class="titulos">
-                <h1>Santino Arroyo</h1>
-                <h2>Ingeniero en sistemas - Desarrollador full-stack</h2>
-            </div>
+<body>
 
-        </header>
+    <header>
+        <div class="perfil">
+            <img src="/Imagenes/1719359115854.jpg">
+        </div>
+        <div class="titulos">
+            <h1>Santino Arroyo</h1>
+            <h2>Ingeniero en sistemas - Desarrollador full-stack</h2>
+        </div>
 
-        <nav>
-            <ul>
-                <li> <a href="../index.html">Inicio</a></li>
-                <li> <a href="habilidades.html">Habilidades</a></li>
-                <li> <a href="proyectos.html">Proyectos</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    </header>
 
-        <main>
-            <div class="titulo">
-                <h3>Lenguajes</h3>
-            </div>
+    <nav>
+        <ul>
+            <li> <a href="../index.html">Inicio</a></li>
+            <li> <a href="habilidades.html">Habilidades</a></li>
+            <li> <a href="proyectos.html">Proyectos</a></li>
+            <li> <a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-            <div class="contenedor-grid">
-                <div>
-                    <h4>Frontend</h4>
+    <main>
+        <div class="titulo">
+            <h3>Lenguajes</h3>
+        </div>
+
+        <div class="contenedor-grid">
+            <div>
+                <h4>Frontend</h4>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Experiencia en librerías como:</li>
                     <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Experiencia en librerías como:</li>
-                        <ul>
-                            <li>React Js</li>
-                            <li>Angular</li>
-                            <li>jQuery</li>
-                        </ul>
+                        <li>React Js</li>
+                        <li>Angular</li>
+                        <li>jQuery</li>
                     </ul>
-                </div>
-                <div>
-                    <h4>Backend</h4>
-                    <ul>
-                        <li>Python</li>
-                        <li>Java</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Bases de Datos</h4>
-                    <ul>
-                        <li>SQL Server</li>
-                        <li>Oracle</li>
-                        <li>MongoDB</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Servidores</h4>
-                    <ul>
-                        <li>Nginx</li>
-                    </ul>
-                </div>
-        </main>
-
-
-        <footer>
-            <div class="footer-content">
-                <p>Santino Arroyo | +54 3576 448401</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/santino-arroyo-628090239/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
-                    <a href="https://github.com/SantinoArroyo" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="mailto:josesantinoarroyo01@gmail.com"> <i class="fa-brands fa-google"></i></a>
-                </div>
+                </ul>
             </div>
-            <div class="contenedor_switch">
-                <div class="col text-center">
-                    <label id="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
+            <div>
+                <h4>Backend</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
             </div>
-        </footer>
+            <div>
+                <h4>Bases de Datos</h4>
+                <ul>
+                    <li>SQL Server</li>
+                    <li>Oracle</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Servidores</h4>
+                <ul>
+                    <li>Nginx</li>
+                </ul>
+            </div>
+    </main>
 
-        <script>
-            const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
 
-            function cambiaTema(ev) {
-                if (ev.target.checked) {
-                    document.documentElement.setAttribute('tema', 'light');
-                } else {
-                    document.documentElement.setAttribute('tema', 'dark');
-                }
+    <footer>
+        <div class="footer-content">
+            <p>Santino Arroyo | +54 3576 448401</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/santino-arroyo-628090239/" target="_blank"> <i
+                        class="fa-brands fa-linkedin"></i> </a>
+                <a href="https://github.com/SantinoArroyo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:josesantinoarroyo01@gmail.com"> <i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+        <div class="contenedor_switch">
+            <div class="col text-center">
+                <label id="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+
+        function cambiaTema(ev) {
+            if (ev.target.checked) {
+                document.documentElement.setAttribute('tema', 'light');
+            } else {
+                document.documentElement.setAttribute('tema', 'dark');
             }
-            colorSwitch.addEventListener('change', cambiaTema);
+        }
+        colorSwitch.addEventListener('change', cambiaTema);
 
-    
+
         const navLinks = document.querySelectorAll("nav ul li a");
         navLinks.forEach(link => {
-            link.addEventListener("mouseover", function() {
+            link.addEventListener("mouseover", function () {
                 this.style.color = "var(--color-principal)";
             });
-            link.addEventListener("mouseout", function() {
+            link.addEventListener("mouseout", function () {
                 this.style.color = "#fff";
             });
         });
+    </script>
 
-        </script>
-
-    </body>
+</body>
 
 </html>
